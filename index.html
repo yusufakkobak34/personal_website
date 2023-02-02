@@ -542,10 +542,10 @@
                 <h2 class="section__title">Portfolyo</h2>
                 <span class="section__subtitle">Kişisel portfolyo</span>
                 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
@@ -556,13 +556,9 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="portfolio__container container">
-                    <div>
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
+                        
+                         <!--==================== PORTFOLIO 2 ====================-->
+                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
@@ -573,13 +569,9 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="portfolio__container container">
-                    <div>
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
+                          <!--==================== PORTFOLIO 3 ====================-->
+                          <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
@@ -590,9 +582,20 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
 
+                    </div>
+                     
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
