@@ -1,23 +1,20 @@
-/*==================== MENU GOSTERİMİ ====================*/
+
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-/*===== MENU GÖSTER =====*/
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU GİZLEME =====*/
 if(navClose){
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
 
-/*==================== MOBİL MENU KALDIRMA ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -26,7 +23,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== YETENEKLER ====================*/
 const skillContent = document.getElementsByClassName('skills__content'),
       skillHeader = document.querySelectorAll('.skills__header')
 
@@ -45,8 +41,6 @@ skillHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
       
-
-/*==================== NİTELİKLER ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -66,7 +60,6 @@ tabs.forEach(tab => {
     })
 })      
 
-/*==================== SERVİSLER ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
         modalCloses = document.querySelectorAll('.services__modal-close')
@@ -89,8 +82,6 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-
-/*==================== PORTFOLYO  ====================*/
 let swiper = new Swiper('.portfolio__container',{
   cssMode: true,
   loop: true,
@@ -105,8 +96,6 @@ let swiper = new Swiper('.portfolio__container',{
   },
 });
 
-
-/*==================== AKTİF KISIM  ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -126,22 +115,18 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== ARKA PLAN DEĞİŞTİRME ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== YUKARI KAYDIR BUTONU GÖSTERME ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove();
 }
 window.addEventListener('scroll' , scrollUp)
 
-/*==================== KOYU TEMA  ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
