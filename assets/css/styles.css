@@ -1,14 +1,14 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-/*==================== VARIABLES CSS ====================*/
+/*==================== CUSTOM CSS====================*/
 :root {
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /*========== Renkler ==========*/
+    /* Favori renkleri değiştirme */
+    --hue-color: 230; /*Pembe 250 - Yeşil 142 - Mavi 230 - Pembe 340*/
 
-    /* HSL color mode */
+    /* HSL color modu */
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -22,10 +22,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== Font and typography ==========*/
+    /*========== Font ve tipografi ==========*/
     --body-font: 'Poppins', sans-serif;
-
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -34,12 +32,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /*========== Font weight ==========*/
+    /*========== Font kalınlığı ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    /*========== Margin Değerleri==========*/
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -49,13 +46,13 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+    /*========== Z-Index Değerleri ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
 
-/* Font size for large devices */
+/* Büyük ekranlar için font değerleri */
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
@@ -68,9 +65,8 @@
     }
 }
 
-/*========== Variables Dark theme ==========*/
+/*========== Karanlık tema değerleri ==========*/
 body.dark-theme{
-  /* HSL color mode */
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -81,7 +77,7 @@ body.dark-theme{
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
+/*========== Buton koyu ve açık tema ==========*/
 .nav__btns{
   display: flex;
   align-items: center;
@@ -98,7 +94,7 @@ body.dark-theme{
   color: var(--first-color);
 }
 
-/*==================== BASE ====================*/
+/*==================== TEMEL ====================*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -135,7 +131,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/*==================== Tekrar Kullanılabilir CSS Sınıfları ====================*/
 .section {
   padding: 2rem 0 4rem;
 }
@@ -156,7 +152,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/*==================== BİÇİM ====================*/
 .container {
   max-width: 768px;
   margin-left: var(--mb-1-5);
@@ -177,7 +173,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/*==================== NAVBAR ====================*/
 .nav{
   max-width: 968px;
   height: var(--header-height);
@@ -254,22 +250,22 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
+/* Menu Göster */
 .show-menu{
   bottom: 0;
 }
 
-/* Active link */
+/* Aktif link */
 .active-link{
   color: var(--first-color);
 }
 
-/* Change background header */
+/* Arka plan değiştirme */
 .scroll-header{
   box-shadow: 0 -1px 4px rgba(0,0,0,.15); 
 }
 
-/*==================== HOME ====================*/
+/*==================== ANA SAYFA ====================*/
 
 .home__container{
   gap: 1rem;
@@ -353,7 +349,7 @@ img {
 }
 
 
-/*==================== BUTTONS ====================*/
+/*==================== BUTONLAR ====================*/
 .button{
   display: inline-block;
   background-color: var(--first-color);
@@ -393,7 +389,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/*==================== ABOUT ====================*/
+/*==================== HAKKIMDA ====================*/
 .about__img{
   width: 200px;
   border-radius: .5rem;
@@ -433,7 +429,7 @@ img {
   justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
+/*==================== YETENEKLER ====================*/
 .skills__container{
   row-gap: 0;
 }
@@ -565,7 +561,7 @@ img {
 }
 
 
-/*==================== QUALIFICATION ====================*/
+/*==================== NİTELİKLER ====================*/
 .qualification__tabs{
   display: flex;
   justify-content: space-evenly;
@@ -638,7 +634,7 @@ img {
 }
 
 
-/*==================== SERVICES ====================*/
+/*==================== SERVİSLER ====================*/
 .services__container{
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -738,7 +734,7 @@ img {
 }
 
 
-/*==================== PORTFOLIO ====================*/
+/*==================== PORTFOLYO ====================*/
 .portfolio__container{
   overflow: initial;
 }
@@ -798,7 +794,7 @@ img {
   outline: none;
 }
 
-/*==================== CONTACT ME ====================*/
+/*==================== İLETİŞİM ====================*/
 .contact__container{
   row-gap: 3rem;
 }
@@ -902,7 +898,7 @@ img {
   color: #fff;
 }
 
-/*========== SCROLL UP ==========*/
+/*========== YAN KAYDIRMA ==========*/
 .scrollup{
   position: fixed;
   right: 1rem;
@@ -925,12 +921,12 @@ img {
 
 }
 
-/* Show scroll */
+/* Kaydırmayı göster */
 .show-scroll{
   bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+/*========== Kaydırma Butonu ==========*/
 ::-webkit-scrollbar{
   width: .60rem;
   background-color: var(--scroll-bar-color);
@@ -942,8 +938,8 @@ img {
   border-radius: .5rem;
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/*==================== MEDYA GÖSTERİMİ ====================*/
+/* Küçük ekranlı cihazlar için */
 @media screen and (max-width: 350px){
   .container{
     margin-left: var(--mb-1);
@@ -985,7 +981,7 @@ img {
   }
 }
 
-/* For medium devices */
+/* Orta ekranlı cihazlar için  */
 @media screen and (min-width: 568px){
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
@@ -1014,7 +1010,7 @@ img {
 
 }
 
-/* For large devices */
+/* Büyük ekranlı cihazlar için */
 @media screen and (min-width: 768px){
   .container{
     margin-left: auto;
@@ -1143,7 +1139,7 @@ img {
   }
 }
 
-/* For extra-large devices */
+/* Ekstra büyük ekranlı cihazlar için */
 @media screen and (min-width: 1024px){
   .header,
   .main,
