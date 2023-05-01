@@ -424,6 +424,12 @@ span{
     background: var(--second-bg-color);
 }
 
+.skills h2{
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .skills .skills-row{
     display: flex;
     flex-wrap: wrap;
@@ -435,8 +441,14 @@ span{
 }
 
 .skills-column .title{
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
+}
+
+.skills-column .skills-box{
+    position: relative;
 }
 
 .skills-box .skills-content{
@@ -695,7 +707,7 @@ overflow: hidden;
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.education.show-animate .education-box .animate.scroll{
+.skills.show-animate .animate.scroll{
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
