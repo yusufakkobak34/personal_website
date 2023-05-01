@@ -1,3 +1,4 @@
+/* Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -10,6 +11,8 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Re-Usable CSS Classes */
 
 :root{
     --bg-color: #081b29;
@@ -27,6 +30,8 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
+/* Header Section */
 
 .header{
     position: fixed;
@@ -52,6 +57,8 @@ body{
     color: var(--text-color);
     font-weight: 600;
 }
+
+/* Navbar Section */
 
 .navbar{
     position: relative;
@@ -82,6 +89,8 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
+/* Home Section */
 
 .home{
     display: flex;
@@ -153,6 +162,8 @@ section{
     margin: 2rem 0 4rem;
 }
 
+/* Buttons */
+
 .btn-box{
     position: relative;
     display: flex;
@@ -213,6 +224,8 @@ section{
     width: 100%;
 }
 
+/* Social Buttons in Home Section */
+
 .home-sci{
     position: absolute;
     bottom: 4rem;
@@ -257,6 +270,8 @@ section{
 .home-sci a:hover::before{
     width: 100%;
 }
+
+/* About Section */
 
 .about{
     display: flex;
@@ -335,6 +350,8 @@ span{
 .btn-box.btns a::before{
     background: var(--second-bg-color);
 }
+
+/* Education Section */
 
 .education{
     display: flex;
@@ -426,6 +443,8 @@ span{
     padding-top: .5rem;
 }
 
+/* Skills Section */
+
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
@@ -512,6 +531,8 @@ span{
     border-radius: .3rem;
     background: var(--main-color);
 }
+
+/* First Skills Section */
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 80%;
@@ -638,6 +659,7 @@ span{
 }
 
 /* Footer Section */
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -696,6 +718,7 @@ overflow: hidden;
 }
 
 /* Animation Reload and Scroll */
+
 .animate{
     position: absolute;
     top: 0;
@@ -739,7 +762,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 
-/* Breakpoints */
+/* Breakpoints (Responsibility Classes) */
 
 @media (max-width:1200px){
     html{
